@@ -4,7 +4,7 @@ import android.content.Context;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import com.exemplo.appreceitas.model.RecipeEntity;
+import com.example.receitasferas.model.RecipeEntity;
 
 @Database(entities = {RecipeEntity.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {

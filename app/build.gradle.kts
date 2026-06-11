@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-
+    // Dependências padrões que já estavam no seu projeto
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -40,4 +40,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // === DEPENDÊNCIAS DO ROOM DATABASE (ADICIONADAS AQUI) ===
+    val roomVersion = "2.6.1"
+
+    // Biblioteca de execução do Room
+    implementation("androidx.room:room-runtime:$roomVersion")
+
+    // Processador de anotações (essencial para ler o @Entity, @Dao, etc.)
+    annotationProcessor("androidx.room:room-compiler:$roomVersion")
 }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ReceitasFeras</string>
+    <string name="titulo_receita_placeholder">Título da Receita</string>
 </resources>
